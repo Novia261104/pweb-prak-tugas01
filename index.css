@@ -1,0 +1,315 @@
+/* font keseluruhan */
+*{
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+a{ 
+  text-decoration: none;
+}
+button{
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+img {
+  width: 100%;
+}
+/* .section-content{
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: max-content; 
+} */
+
+/*  */
+header {
+  position: fixed;
+  background: #001A6E;
+  width: 100%;
+  z-index: 5;
+  }
+header .navbar {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .nav-logo .logo-text{
+  color: white;
+  font-size: x-large;
+}
+
+.navbar .nav-menu {
+  display: flex;
+  gap: 10px;
+}
+.navbar .nav-menu .nav-link{
+  padding: 10px 18px;
+  font-size: 15px;
+  color: white;
+  font-weight: 300;
+  border-radius: 20px;
+  transition: 0.3 ease;
+}
+.navbar .nav-menu .nav-link:hover{
+  background: #009990;
+  color: #001A6E;
+}
+
+
+/* Bagian Hero */
+.hero {
+    background: #E1FFBB;
+    min-height: 100vh;
+  }
+
+  .hero .hero-content{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color: #001A6E;
+    justify-content: space-between;
+  }
+  .hero .hero-content .hero-details{
+    margin-left: 30px;
+  }
+  .hero .hero-details h1{
+    font-weight: 600;
+    color: #001A6E;
+    font-size: 32px;
+  }
+  .hero .hero-details p{
+    margin-top: 8px;
+    color: #616161;
+    margin-bottom: 5vh;
+  }
+  
+  .hero-details .cta-button {
+    padding: 15px 20px;
+    background-color: #009990;
+    color: #001A6E;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .cta-button:hover {
+    background-color: #FFAB5B;
+  }
+  
+  .hero-content .hero-image{
+    max-width: 500px;
+    margin-right: 50px;
+  }
+  .hero-image img {
+    max-width: 100vh;
+    border-radius: 10px;
+  }
+  /* features */
+  .features {
+    background: #009990;
+  }
+
+  .features .features-content{
+    display: flex;
+    align-items: center;
+    min-height: 50vh;
+    color: #E1FFBB;
+    justify-content: space-between;
+  }
+  .features .features-content .features-details{
+    margin-left: 50px;
+  }
+  .features .features-details h2{
+    font-weight: 600;
+    color: #E1FFBB;
+    font-size: 24px;
+  }
+  .features .features-details ol{
+    margin-top: 8px;
+    color: #E1FFBB;
+    margin-bottom: 5vh;
+  }
+  .features-content .features-image{
+    max-width: 350px;
+    margin-right: 50px;
+  }
+  .features-image img {
+    max-width: 100vh;
+    border-radius: 10px;
+  }
+  /* Bagian Program */
+  
+  .title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Container utama untuk carousel */
+.carousel-container {
+    width: 100%;
+    min-width: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+
+/* Carousel untuk menampung kartu */
+.carousel {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Kartu program */
+.program-card {
+    background-color: #074799;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 200px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.8);
+    transition: transform 0.5s ease-in-out;
+}
+
+.program-card img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.program-card p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.program-card.active {
+    transform: scale(1.1);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 100vh;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Tombol navigasi */
+button {
+    background-color: #009990;
+    color: black;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #e0a800;
+}
+
+  
+  /* Bagian Testimoni */
+  .testimonials {
+    padding: 50px 100px;
+    background-color: #E1FFBB;
+    text-align: center;
+  }
+  
+  .testimonials h2 {
+    font-size: 28px;
+    color: #000;
+    margin-bottom: 40px;
+  }
+  
+  .testimonial-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+  }
+  
+  .testimonial-item {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    width: 250px;
+  }
+  
+  .testimonial-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+  }
+  
+  .testimonial-item p {
+    font-size: 16px;
+    color: #616161;
+    margin-bottom: 15px;
+  }
+  
+  .testimonial-item h4 {
+    font-size: 18px;
+    color: #004D40;
+  }
+  
+  /* Bagian Footer */
+  footer {
+    padding: 30px 100px;
+    background-color: #001A6E;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .footer-content, .footer-contact, .footer-social {
+    max-width: 30%;
+  }
+  
+  .footer-nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-nav ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+  }
+  
+  .footer-nav ul li a:hover {
+    color: #fff;
+  }
+  
+  .footer-contact p, .footer-social h4 {
+    margin-bottom: 10px;
+  }
+  
+  
